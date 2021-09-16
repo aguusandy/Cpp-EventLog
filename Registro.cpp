@@ -30,7 +30,7 @@ bool Registro::cargarEventosVector(){
 				std::string(structEventoAux.DescripcionStruct), 
 				std::string(structEventoAux.Ente), 
 				structEventoAux.montoStruct,
-				structE	ventoAux.Dia, 
+				structEventoAux.Dia, 
 				structEventoAux.Mes, 
 				structEventoAux.Anio, 
 				std::string(structEventoAux.Moneda)
@@ -41,7 +41,7 @@ bool Registro::cargarEventosVector(){
 	fin.close();
 }
 
-///crea un nuevo evento cuyos datos son obtenidos por otra función y se inserta en el vector de Eventos
+///crea un nuevo evento cuyos datos son obtenidos por otra funciÃ³n y se inserta en el vector de Eventos
 void Registro::registrarNuevoEvento(Evento event){
 	vectorEventos.push_back(event);
 	guardarEventosVector();
